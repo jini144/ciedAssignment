@@ -1,0 +1,23 @@
+<div class="login-container">
+    <div class="left-section">
+      <img src="assets/imageLogin.png" alt="Company Logo" />
+    </div>
+    <div class="right-section">
+        <form [formGroup]="loginForm">
+      <h2>Welcome</h2>
+      <p>Login with username and password</p>
+      <div class="input-group">
+        <label for="Emailaddress">Email address</label>
+        <input type="text" id="Emailaddress" name="Emailaddress" formControlName="username" placeholder="Enter your Emailaddress" />
+      </div>
+      <div class="input-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" formControlName="password" placeholder="Enter your password" />
+        <span class="reset-option">Reset</span>
+      </div>
+      <button type="button" class="btn btn-primary btn-block mb-4" (click)="login()">Login</button>
+      <p class="signup-link">Don't have an account? <a href="#">Signup</a></p>
+    </form>
+    </div>
+  </div>
+  
